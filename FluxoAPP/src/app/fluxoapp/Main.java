@@ -53,9 +53,14 @@ public class Main {
                 String data = leia.next();
                 System.out.println("Digite a categoria: Despesa ou Receita: ");
                 String categoria = leia.next();
-                System.out.println("Digite a descrição: ");
-                leia.nextLine(); // Consome o \n pendente
-                String descricao = leia.nextLine();
+        while (!categoria.equalsIgnoreCase("Despesa") && !categoria.equalsIgnoreCase("Receita")) {
+            System.out.println("Categoria inválida! Por favor, digite 'Despesa' ou 'Receita'.");
+            System.out.println("Digite a categoria: Despesa ou Receita: ");
+            categoria = leia.next();
+        }
+        System.out.println("Digite a descrição: ");
+        leia.nextLine(); // Consome o \n pendente
+        String descricao = leia.nextLine();
 
                 Movimentacao novaMovimentacao = new Movimentacao(descricao, categoria, valor, data, categoria, novoUsuario.getId());
                 novoControle.adicionarMovimentacao(novaMovimentacao);
