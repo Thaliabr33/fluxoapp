@@ -1,11 +1,11 @@
-   package app.fluxoapp;
+package app.fluxoapp;
 
 import java.util.Scanner;
 
 import modelos.fluxoapp.Usuario;
 import transacoes.fluxoapp.Movimentacao;
 import transacoes.fluxoapp.MovimentacaoControler;
-
+import modelos.fluxoapp.ExportadorDados;
 public class Main {
     public static void main(String[] args) {
         Usuario novoUsuario = new Usuario(0, null, null, null);
@@ -22,7 +22,7 @@ public class Main {
         System.out.println("Digite o seu salário: ");
         novoUsuario.setSaldo(leia.nextDouble());
         System.out.println("Escolha uma senha: ");
-        leia.nextLine(); // Consome o \n pendente
+        leia.nextLine();
         novoUsuario.setSenha(leia.nextLine());
         System.out.println("Usuário criado com sucesso!");
         System.out.println("Nome: " + novoUsuario.getNome());
@@ -81,6 +81,22 @@ public class Main {
             case 4:
                 System.out.println("Exibir saldo do usuário: R$" + novoUsuario.getSaldo());
                 break;
+            case 5:
+                System.out.println("Exportar dados para arquivo!");
+                leia.nextLine();
+                System.out.print("Digite o nome do arquivo para exportar (ex: dados.txt): ");
+                String nomeArquivo = leia.nextLine();
+                try {
+                    ExportadorDados.exportarUsuarioMovimentacoes(
+                        novoUsuario,
+                        novoControle.getMovimentacoes(),
+                        nomeArquivo
+                    );
+                    System.out.println("Dados exportados com sucesso para " + nomeArquivo);
+                } catch (Exception e) {
+                    System.out.println("Erro ao exportar dados: " + e.getMessage());
+                }
+                break;
             case 0:
                 System.out.println("Saindo...");
                 break;
@@ -98,6 +114,7 @@ public class Main {
         System.out.println("2 - Listar Movimentações");
         System.out.println("3 - Remover Movimentação");
         System.out.println("4 - Exibir Saldo do Usuário");
+        System.out.println("5 - Exportar dados para arquivo");
         System.out.println("0 - Sair");
         System.out.print("Escolha uma opção: ");
     }

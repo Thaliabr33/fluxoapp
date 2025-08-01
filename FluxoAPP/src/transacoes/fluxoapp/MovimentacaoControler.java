@@ -3,6 +3,9 @@ package transacoes.fluxoapp;
 import java.util.ArrayList;
 
 public class MovimentacaoControler {
+    public java.util.List<Movimentacao> getMovimentacoes() {
+        return movimentacoes;
+    }
 private ArrayList<Movimentacao> movimentacoes = new ArrayList<>();
 public void adicionarMovimentacao (Movimentacao mov) {
     movimentacoes.add(mov);
