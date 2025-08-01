@@ -36,7 +36,8 @@ switch (operacao) {
     System.out.println("Digite a categoria: Despesa ou Receita: ");
     novaMovimentacao.setCategoria(leia.next());
     System.out.println("Digite a descrição: ");
-    novaMovimentacao.setDescricao(leia.next());
+    leia.nextLine(); 
+    novaMovimentacao.setDescricao(leia.nextLine());
     
     novoControle.adicionarMovimentacao(novaMovimentacao);
     System.out.println("Movimentação cadastrada com sucesso!");
