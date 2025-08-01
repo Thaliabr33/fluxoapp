@@ -25,7 +25,7 @@ public void  removerMovimentacao (int index) {
         System.out.println("Índice inválido. Não foi possível remover a movimentação.");
 }
     else{
-        Movimentacao movi = movimentacoes.remove(index);
+        movimentacoes.remove(index);
     }
 }
 }

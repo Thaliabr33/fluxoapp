@@ -53,7 +53,7 @@ public Movimentacao(String descricao, String tipo, double valor, String data, St
 }
 @Override
 public String toString() {
-return "Movimentação: " + descricao + ", Tipo: " + tipo + ", Valor: " + valor + ", Data: " + data + ", Categoria: " + categoria + ", Usuário ID: " + usuarioId;    
+return "Movimentação: " + descricao + ", Valor: " + valor + ", Data: " + data + ", Categoria: " + categoria ;    
 }
 
 }
