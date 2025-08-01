@@ -10,7 +10,6 @@ public class Main {
     public static void main(String[] args) {
         Usuario novoUsuario = new Usuario(0, null, null, null);
 
-        Movimentacao novaMovimentacao = new Movimentacao(null, null, 0, null, null, 0);
         MovimentacaoControler novoControle = new MovimentacaoControler();
         int operacao =0-1;
         Scanner leia = new Scanner(System.in);
@@ -28,20 +27,28 @@ System.out.println("Digite a operação desejada: ");
 operacao = leia.nextInt();
 switch (operacao) {
     case 1:
-    System.out.println("Cadastrar movimentação!");
-    System.out.println("Digite o valor: ");
-    novaMovimentacao.setValor(leia.nextDouble());
-    System.out.println("Digite a data (dd/mm/aaaa): ");
-    novaMovimentacao.setData(leia.next());
-    System.out.println("Digite a categoria: Despesa ou Receita: ");
-    novaMovimentacao.setCategoria(leia.next());
-    System.out.println("Digite a descrição: ");
-    leia.nextLine(); 
-    novaMovimentacao.setDescricao(leia.nextLine());
-    
-    novoControle.adicionarMovimentacao(novaMovimentacao);
-    System.out.println("Movimentação cadastrada com sucesso!");
-    break;
+        System.out.println("Cadastrar movimentação!");
+        System.out.println("Digite o valor: ");
+        double valor = leia.nextDouble();
+        System.out.println("Digite a data (dd/mm/aaaa): ");
+        String data = leia.next();
+        System.out.println("Digite a categoria: Despesa ou Receita: ");
+        String categoria = leia.next();
+        System.out.println("Digite a descrição: ");
+        leia.nextLine(); // Consome o \n pendente
+        String descricao = leia.nextLine();
+
+        Movimentacao novaMovimentacao = new Movimentacao(descricao, categoria, valor, data, categoria, novoUsuario.getId());
+        novoControle.adicionarMovimentacao(novaMovimentacao);
+
+        if (categoria.equalsIgnoreCase("Despesa")) {
+            novoUsuario.setSaldo(novoUsuario.getSaldo() - valor);
+        } else if (categoria.equalsIgnoreCase("Receita")) {
+            novoUsuario.setSaldo(novoUsuario.getSaldo() + valor);
+        }
+
+        System.out.println("Movimentação cadastrada com sucesso!");
+        break;
     case 2:
     System.out.println("Listar movimentações!");
     novoControle.listarMovimentacao();
