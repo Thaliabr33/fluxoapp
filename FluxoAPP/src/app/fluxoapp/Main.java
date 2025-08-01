@@ -19,6 +19,8 @@ public class Main {
         novoUsuario.setNome(leia.nextLine());
         System.out.println("Digite seu email: ");
         novoUsuario.setEmail(leia.nextLine());
+        System.out.println("Digite o seu salario: ");
+        novoUsuario.setSaldo(leia.nextDouble());
     
         do {
     exibeMenu();

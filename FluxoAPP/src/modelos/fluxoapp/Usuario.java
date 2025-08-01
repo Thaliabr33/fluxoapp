@@ -5,6 +5,12 @@ public class Usuario {
     private String nome;
     private String email;
 private double saldo;
+private String senha;
+
+
+    public Usuario(double saldo) {
+    this.saldo = saldo;
+}
     public int getId() {
         return id;
     }
@@ -38,6 +44,12 @@ private double saldo;
     @Override
     public String toString() {
 return "Usuário ID: " + id + ", Nome: " + nome + ", Email: " + email;        
+    }
+    public double getSaldo() {
+        return saldo;
+    }
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
     
     }
