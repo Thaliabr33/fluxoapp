@@ -17,9 +17,9 @@ public class Main {
         System.out.println("Bem-vindo ao FluxoAPP!");
         System.out.println("Digite seu nome: ");
         novoUsuario.setNome(leia.nextLine());
-        System.out.println("Digite seu email: ");
+        System.out.println("Digite seu e-mail: ");
         novoUsuario.setEmail(leia.nextLine());
-        System.out.println("Digite o seu salario: ");
+        System.out.println("Digite o seu salário: ");
         novoUsuario.setSaldo(leia.nextDouble());
     
         do {
