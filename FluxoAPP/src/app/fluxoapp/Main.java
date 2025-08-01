@@ -59,8 +59,10 @@ switch (operacao) {
     default:
     System.out.println("Operação inválida! Tente novamente.");
         }
-    } while (operacao != 0);
-        
+        } while (operacao != 0);
+            
+        leia.close();
+            
     }
         
 
