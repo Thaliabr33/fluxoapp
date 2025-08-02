@@ -1,0 +1,63 @@
+# Compilados Java
+*.class
+
+# Diretórios de build
+bin/
+build/
+out/
+target/
+
+# Arquivos temporários do sistema
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# Configurações do VS Code
+.vscode/
+
+# Arquivos de sistema do Windows
+desktop.ini
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Arquivos de backup
+*~
+*.bak
+
+# Maven / Gradle
+.mvn/
+.gradle/
+!gradle-wrapper.jar
+.gradle/
+build/
+
+# Arquivos de cache
+.cache/
+.project
+.classpath
+.settings/
+
+# Repositórios internos (JARs de dependência local, se tiver)
+lib/
+
+# Git
+.git/
+
+# Evita conflitos com merges incompletos
+*.orig
+*.rej
+
+# Logs comuns
+nohup.out
+
+# Node (caso use no futuro)
+node_modules/
+
+# Java específico do seu projeto
+FluxoAPP/bin/
