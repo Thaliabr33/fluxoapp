@@ -26,17 +26,17 @@ public class Main {
         novoUsuario.setSenha(leia.nextLine());
         System.out.println("Usuário criado com sucesso!");
         System.out.println("Nome: " + novoUsuario.getNome());
+    String senha;
     do {
         System.out.println("Vamos para o login!");
         System.out.println("Digite sua senha: ");
-        String senha = leia.nextLine();
+        senha = leia.nextLine();
         if (senha.equals(novoUsuario.getSenha())) {
             System.out.println("Login realizado com sucesso!");
-        }
-        else {
+        } else {
             System.out.println("Senha incorreta! Tente novamente.");
         }
-    } while (!novoUsuario.getSenha().equals(leia.nextLine()));
+    } while (!senha.equals(novoUsuario.getSenha()));
     
     System.out.println("Bem-vindo, " + novoUsuario.getNome() + "! Vamos gerenciar suas movimentações financeiras.");
 
