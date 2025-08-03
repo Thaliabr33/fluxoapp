@@ -12,7 +12,7 @@ public class Main {
 
         MovimentacaoControler novoControle = new MovimentacaoControler();
         int operacao =0-1;
-        Scanner leia = new Scanner(System.in);
+        Scanner leia = new Scanner(System.in, java.nio.charset.StandardCharsets.UTF_8);
         System.out.println("Bem-vindo ao FluxoAPP!");
         System.out.println("Vamos começar criando um usuário.");
         System.out.println("Digite seu nome: ");

@@ -7,7 +7,7 @@ import transacoes.fluxoapp.Movimentacao;
 
 public class ExportadorDados {
     public static void exportarUsuarioMovimentacoes(Usuario usuario, List<Movimentacao> movimentacoes, String caminhoArquivo) throws IOException {
-        try (FileWriter writer = new FileWriter(caminhoArquivo)) {
+        try (java.io.OutputStreamWriter writer = new java.io.OutputStreamWriter(new java.io.FileOutputStream(caminhoArquivo), java.nio.charset.StandardCharsets.UTF_8)) {
             writer.write("Nome: " + usuario.getNome() + "\n");
             writer.write("Email: " + usuario.getEmail() + "\n");
             writer.write("Saldo: " + usuario.getSaldo() + "\n\n");
