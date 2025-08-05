@@ -6,27 +6,36 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <form action="Main.java">
-        <fieldset>  
-        <legend>Cadastro</legend>
-        <div>
-        <label for="">Nome: </label>
-        <input type="text" name="nome" id="nome"><br>
-        </div>
-        <div>
-        <label for="">E-mail: </label>
-        <input type="email" nome="email" id="email"><br>
-        </div>
-        <div>
-        <label for="">Senha: </label>
-        <input type="password" name="senha" id="senha"><br>
-        </div>
-        <div>
-        <label for="">Confirme a Senha: </label>
-        <input type="password" name="confirmarSenha" id="confirmarSenha"><br>
-        </div>
-        <button id="botao">Cadastrar</button>
-        </fieldset>
-    </form>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="login.html">Faça seu login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="Main.java">
+            <fieldset>  
+            <legend>Cadastro</legend>
+            <div>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome"><br>
+            </div>
+            <div>
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="email"><br>
+            </div>
+            <div>
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" id="senha"><br>
+            </div>
+            <div>
+            <label for="confirmarSenha">Confirme a Senha: </label>
+            <input type="password" name="confirmarSenha" id="confirmarSenha"><br>
+            </div>
+            <button id="botao">Cadastrar</button>
+            </fieldset>
+        </form>
+    </main>
 </body>
 </html>
