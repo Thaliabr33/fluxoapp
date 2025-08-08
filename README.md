@@ -1,59 +1,44 @@
 💸 FluxoApp
-FluxoApp é um sistema de controle financeiro pessoal, desenvolvido em Java e Web (HTML, CSS, JS) com foco em estudantes. A proposta é oferecer uma solução simples, funcional e intuitiva para gerenciar suas entradas e saídas financeiras.
+FluxoApp é um sistema de controle financeiro pessoal, desenvolvido em Java e Web (HTML, CSS, JS) com foco em estudantes. A proposta é oferecer uma solução simples, funcional e intuitiva para gerenciamento financeiro.
 
 📦 Versão
 v1.0 Beta
-Desenvolvido por:
-👨‍💻 Gabriel Ribeiro
-👨‍💻 Gustavo Nunes
-👩‍💻 Thalia de Lara Barbosa
 
-👥 Contato
-GitHub Gabriel: @gabriel-ribeiro-dev
-GitHub Gustavo: @gustavonunes1012
-GitHub Thalia: @Thaliabr33
-LinkedIn Gabriel: Gabriel Ribeiro
-LinkedIn Gustavo: Gustavo Nunes
-LinkedIn Gustavo: Thalia de Lara Barbosa
+👨‍💻 Desenvolvedores
+Gabriel Ribeiro
+GitHub: @gabriel-ribeiro-dev
+LinkedIn: Gabriel Ribeiro
+
+Gustavo Nunes
+GitHub: @gustavonunes1012
+LinkedIn: Gustavo Nunes
+
+Thalia de Lara Barbosa
+GitHub: @Thaliabr33
+LinkedIn: Thalia de Lara Barbosa
 
 🚀 Funcionalidades
-✅ Interface Web (HTML/CSS/JS)
+Interface Web (HTML/CSS/JS)
 Tela de login e cadastro
-
 Navegação por menus
-
 Visualização e remoção de dados
-
 Exportação de informações financeiras
-
 Design clean e responsivo
-
-✅ Sistema em Java (CLI)
+Sistema em Java (CLI)
 Cadastro de movimentações financeiras (entradas e saídas)
-
 Visualização do histórico completo
-
 Remoção de lançamentos
-
 Exibição do saldo total
-
 Exportação dos dados para arquivo .csv
-
 Interface de terminal baseada em menus interativos
-
 🧰 Tecnologias Utilizadas
-⚙️ Java 21 – compilação com javac e execução via terminal
-
-🌐 HTML5 + CSS3 – estrutura e estilo da interface web
-
-🧪 JavaScript (básico) – funcionalidades front-end
-
-💾 Git + GitHub – versionamento de código
-
+Java 21: compilação com javac e execução via terminal
+HTML5 + CSS3: estrutura e estilo da interface web
+JavaScript (básico): funcionalidades front-end
+Git + GitHub: versionamento de código
 ⚙️ Instalação e Execução
-✅ Pré-requisitos
+Pré-requisitos
 Git Bash, CMD, Terminal Linux ou qualquer outro com suporte a UTF-8
-
 Java instalado (versão 17 ou superior)
 
 🔧 Compilar manualmente (opcional)
