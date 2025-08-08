@@ -6,32 +6,58 @@ v1.0 Beta
 Autores: Gabriel Ribeiro e Gustavo Nunes
 
 👥 Contato
+
 GitHub Gabriel: @gabriel-ribeiro-dev
+
 GitHub Gustavo: @gustavonunes1012
+
 GitHub: @Thaliabr33
+
 LinkedIn Gabriel: Gabriel Ribeiro
+
 LinkedIn Gustavo: Gustavo Nunes
+
 LinkedIn: Thalia de Lara Barbosa
+
+
 🚀 Funcionalidades atuais
+
 ✅ Cadastro de movimentações financeiras (entradas e saídas)
+
 ✅ Visualização do histórico completo
+
 ✅ Remoção de movimentações
+
 ✅ Exibição de saldo total
+
 ✅ Exportação de dados para um arquivo .csv
+
 ✅ Interface simples baseada em menus no terminal
+
 🧰 Tecnologias utilizadas
+
 Java 21
+
 Compilação com javac e execução via terminal
+
 Codificação forçada em UTF-8 para suporte a acentuação
+
 Versionamento com Git + GitHub
+
 ⚙️ Instalação e execução
+
 ✅ Pré-requisitos
+
 Git Bash, CMD, Terminal Linux ou qualquer outro com suporte a UTF-8
+
 Java instalado (versão 17 ou superior)
+
 🔧 Compilar manualmente (opcional)
+
 javac -encoding UTF-8 -d bin $(find src -name "*.java")
 
 ###▶️ Executar no Windows
+
 Use o script automático:
 ./run.bat
 ###▶️ Executar no Linux
