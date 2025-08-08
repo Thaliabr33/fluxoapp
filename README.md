@@ -1,46 +1,33 @@
 💸 FluxoApp
-FluxoApp é um sistema de controle financeiro pessoal, desenvolvido em Java e Web (HTML, CSS, JS) com foco em estudantes. A proposta é oferecer uma solução simples, funcional e intuitiva para gerenciamento financeiro.
+Sistema simples e funcional de fluxo de caixa em linha de comando, desenvolvido em Java puro por dois estudantes apaixonados por programação. Ideal para organizar suas entradas e saídas financeiras de forma rápida e sem complicações, direto do terminal.
 
 📦 Versão
 v1.0 Beta
+Autores: Gabriel Ribeiro e Gustavo Nunes
 
-👨‍💻 Desenvolvedores
-Gabriel Ribeiro
-GitHub: @gabriel-ribeiro-dev
-LinkedIn: Gabriel Ribeiro
-
-Gustavo Nunes
-GitHub: @gustavonunes1012
-LinkedIn: Gustavo Nunes
-
-Thalia de Lara Barbosa
+👥 Contato
+GitHub Gabriel: @gabriel-ribeiro-dev
+GitHub Gustavo: @gustavonunes1012
 GitHub: @Thaliabr33
+LinkedIn Gabriel: Gabriel Ribeiro
+LinkedIn Gustavo: Gustavo Nunes
 LinkedIn: Thalia de Lara Barbosa
-
-🚀 Funcionalidades
-Interface Web (HTML/CSS/JS)
-Tela de login e cadastro
-Navegação por menus
-Visualização e remoção de dados
-Exportação de informações financeiras
-Design clean e responsivo
-Sistema em Java (CLI)
-Cadastro de movimentações financeiras (entradas e saídas)
-Visualização do histórico completo
-Remoção de lançamentos
-Exibição do saldo total
-Exportação dos dados para arquivo .csv
-Interface de terminal baseada em menus interativos
-🧰 Tecnologias Utilizadas
-Java 21: compilação com javac e execução via terminal
-HTML5 + CSS3: estrutura e estilo da interface web
-JavaScript (básico): funcionalidades front-end
-Git + GitHub: versionamento de código
-⚙️ Instalação e Execução
-Pré-requisitos
+🚀 Funcionalidades atuais
+✅ Cadastro de movimentações financeiras (entradas e saídas)
+✅ Visualização do histórico completo
+✅ Remoção de movimentações
+✅ Exibição de saldo total
+✅ Exportação de dados para um arquivo .csv
+✅ Interface simples baseada em menus no terminal
+🧰 Tecnologias utilizadas
+Java 21
+Compilação com javac e execução via terminal
+Codificação forçada em UTF-8 para suporte a acentuação
+Versionamento com Git + GitHub
+⚙️ Instalação e execução
+✅ Pré-requisitos
 Git Bash, CMD, Terminal Linux ou qualquer outro com suporte a UTF-8
 Java instalado (versão 17 ou superior)
-
 🔧 Compilar manualmente (opcional)
 javac -encoding UTF-8 -d bin $(find src -name "*.java")
 
@@ -100,3 +87,5 @@ Este projeto é licenciado sob a **GNU GPL v3 (General Public License versão 3)
 - Alterar a licença para algo mais restritivo.
 
 Mais detalhes: [GNU GPL v3 - Licença completa](https://www.gnu.org/licenses/gpl-3.0.html)
+
+ 
