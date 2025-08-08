@@ -9,21 +9,12 @@ Desenvolvido por:
 👩‍💻 Thalia de Lara Barbosa
 
 👥 Contato
-GitHub:
-
-@gabriel-ribeiro-dev
-
-@gustavonunes1012
-
-@Thaliabr33
-
-LinkedIn:
-
-Gabriel Ribeiro
-
-Gustavo Nunes
-
-Thalia de Lara Barbosa
+GitHub Gabriel: @gabriel-ribeiro-dev
+GitHub Gustavo: @gustavonunes1012
+GitHub Thalia: @Thaliabr33
+LinkedIn Gabriel: Gabriel Ribeiro
+LinkedIn Gustavo: Gustavo Nunes
+LinkedIn Gustavo: Thalia de Lara Barbosa
 
 🚀 Funcionalidades
 ✅ Interface Web (HTML/CSS/JS)
