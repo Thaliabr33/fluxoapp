@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="estilo.css">
+   <title>Fluxo APP - Gerenciador Financeiro</title>
+</head>
+
+<body>
+   <!-- Cabeçalho com logo e titulo principal-->
+   <header>
+      <img src="fluxoApp.png" alt="Logo do Fluxo APP" id="logo">
+      <h1>FluxoAPP: Finanças descomplicadas.</h1>
+      <p>Gerencie suas finanças de forma simples e segura</p>
+   </header>
+
+   <main>
+      <!--Botão para criar conta ou fazer login-->
+      <div id="inicio">
+         <button id="btnCriarConta">Criar Conta</button>
+         <button id="btnLogin">Login</button>
+      </div>
+
+      <!-- Modal(janela interna) para Criar Conta-->
+      <div id="modalCriarConta" class="modal">
+         <div class="modal-content">
+            <span class="close" id="closeCriar">&times;</span>
+            <h2>Criar Conta</h2>
+            <form action="falta.js">
+               <!-- Campos de cadastro-->
+               <label for="nome">Nome</label>
+               <input type="text" type="text" id="nome" placeholder="Nome" required>
+
+               <label for="email">E-mail</label>
+               <input type="email" id="email" placeholder="E-mail" required>
+
+               <label for="salario">Salário</label>
+               <input type="number" id="salario" placeholder="Salário" required>
+
+               <label for="Senha">Escolha uma senha</label>
+               <input type="password" id="senha" placeholder="Senha" required>
+
+               <button type="submit">Cadastrar</button>
+            </form>
+         </div>
+      </div>
+
+      <!-- Modal(janela interna) para Login-->
+      <div id="modalLogin" class="modal">
+         <div class="modal-content">
+            <span class="close" id="closeLogin">&times;</span>
+            <h2>Login</h2>
+            <form action="falta.js">
+               <!-- Campos de login-->
+               <label for="email">E-mail</label>
+               <input type="email" id="email" placeholder="E-mail" required>
+
+               <label for="Senha">Senha</label>
+               <input type="password" id="senha" placeholder="Senha" required>
+
+               <button type="submit">Entrar</button>
+            </form>
+         </div>
+      </div>
+
+
+
+      <!-- Menu e funcionalidades (inicialmente ocultos(display:none))-->
+      <nav id="menuFuncionalidades" style="display:none;">
+         <ul>
+            <li><a href="#cadastrar">Cadastrar Movimentação</a></li>
+            <li><a href="#listar">Listar Movimentações</a></li>
+            <li><a href="#remover">Remover Movimentação</a></li>
+            <li><a href="#exibirSaldo">Exibir Saldo</a></li>
+            <li><a href="#exportar">Exportar dados para arquivo</a></li>
+            <li><button id="btnSair" type="button">Sair</button></li>
+         </ul>
+      </nav>
+
+      <section id="cadastrar">
+         <h2>Cadastrar Movimentação</h2>
+         <form id="formMovimentacao">
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor" placeholder="Valor" required>
+            <label for="data">Data:</label>
+            <input type="date" id="data" placeholder="Data" required>
+            <label for="categoria">Categoria:</label>
+            <select name="categoria" id="categoria" required>
+               <option value="">Selecione</option>
+               <option value="Despesa">Despesa</option>
+               <option value="Receita">Receita</option>
+            </select>
+            <label for="descricao">Descrição</label>
+            <input type="text" id="descricao" placeholder="Descrição" required>
+            <button type="submit">Cadastrar</button>
+         </form>
+         <!-- Mensagem de sucesso ou erro para cadastro -->
+         <div id="mensagemMovimentacao"></div>
+      </section>
+
+      <!-- Manipulo no JS-->
+      <section id="listar" style="display:none;">
+         <h2>Listar Movimentações</h2>
+         <div id="listaMovimentacoes"></div>
+      </section>
+
+      <section id="remover">
+         <h2>Remover Movimentação</h2>
+         <form id="formRemoverMov">
+            <label for="indiceRemover">Digite o indice da movimentação a ser removida:</label>
+            <input type="number" id="indiceRemover" min="1" required>
+            <button type="submit">Remover</button>
+         </form>
+         <!-- Mensagem de sucesso ou erro para remover -->
+         <div id="mensagemRemover"></div>
+      </section>
+
+      <!--Atualiza o valor com o JS-->
+      <section id="exibirSaldo">
+         <h2>Exibir Saldo</h2>
+         <p id="saldoUsuario">Salto atual: R$ 0,00</p>
+      </section>
+
+      <section id="exportar">
+         <h2>Exportar dados para arquivo</h2>
+         <form id="formExportar">
+            <label for="nomeArquivo">Digite o nome do arquivo para exportar:</label>
+            <input type="text" id="nomeArquivo" value="dados.txt" required>
+            <button type="submit">Exportar</button>
+         </form>
+         <!-- Mensagem de sucesso ou erro para a exportação -->
+         <div id="mensagemExportar"></div>
+      </section>
+
+   </main>
+
+   <!-- Rodapé com informações de contato e direitos autorais-->
+   <footer>
+      <p>&copy;2025 Fluxo APP. Todos os direitos reservados</p>
+      <p>
+         Desenvolvido por
+         <a href="@gabriel-ribeiro-dev" target="_blank">Gabriel</a>
+         <a href="@gustavonunes1012" target="_blank">Gustavo</a>
+         <a href="thalia.b13@aluno.ifsc.edu.br" target="_blank">Thalia</a>
+      </p>
+   </footer>
+</body>
+
+</html>
